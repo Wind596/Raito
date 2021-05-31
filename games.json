@@ -1,3 +1,15 @@
-{
-    "Blox":{"script":"https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua", "gameid": 2753915549},
+local Hub = {
+     [994732206] = {
+        [1] = "https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua",
+   },
 }
+
+for i,v in pairs(Hub) do
+    if i == game.PlaceId then
+        print("CheckScript")
+           loadstring(game:HttpGet(v[1]))()
+        else
+        
+        end
+    end
+end
